@@ -32,3 +32,5 @@ if (cluster.isMaster) {
 
   console.log('app is running on port:', port);
 }
+
+// ab -c 50 -n 500 localhost:4999/fast
