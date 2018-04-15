@@ -7,6 +7,7 @@ if (cluster.isMaster) {
   // Cause index.js to be executed *again*
   // but in child mode.
   cluster.fork();
+  cluster.fork();
 } else {
   console.log(cluster.isMaster);
   // I'm a child and I'm going to act like a server
