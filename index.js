@@ -30,5 +30,7 @@ if (cluster.isMaster) {
 
   console.log('app is running on port:', port);
 }
-
+// 500 connections total
 // ab -c 50 -n 500 localhost:4999/fast
+// one connection
+// ab -c 1 -n 1 localhost:4999/
