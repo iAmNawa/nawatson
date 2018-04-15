@@ -9,6 +9,8 @@
 // pm2 monit
 // WIll bring you to a screen where you can check individual processes
 
+// pm2 delete index2
+
 const express = require('express');
 const crypto = require('crypto');
 const app = express();
