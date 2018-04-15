@@ -1,3 +1,6 @@
+// ab -c 1 -n 1 localhost:5001/
+// ab -c 2 -n 2 localhost:5001/
+
 const express = require('express');
 const crypto = require('crypto');
 const app = express();
