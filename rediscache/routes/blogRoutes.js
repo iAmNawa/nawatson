@@ -24,6 +24,10 @@ module.exports = app => {
     const cachedBlogs = await client.get(req.user.id);
 
     // if yes, then respond to the request right away and return
+    if (cachedBlogs) {
+      return res.send(cachedBlogs);
+    }
+
 
     // If no, we need to respond to request
     // and update our cache to store the data
