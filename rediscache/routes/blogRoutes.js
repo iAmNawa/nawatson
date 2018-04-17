@@ -21,7 +21,7 @@ module.exports = app => {
     client.get = util.promisify(client.get);
 
     // Do we have any cached data in redis
-    //const cachedBlogs = client.get(req.user.id);
+    const cachedBlogs = await client.get(req.user.id);
 
     // if yes, then respond to the request right away and return
 
