@@ -18,6 +18,8 @@
   "homepage": "https://github.com/iAmNawa/nodeinfo#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "fetch": "^1.1.0",
+    "morgan": "^1.9.0",
     "nightmare": "^3.0.1",
     "webworker-threads": "^0.7.13"
   }
